@@ -1,0 +1,269 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans&family=Poppins&family=Roboto&display=swap");
+
+*,
+*::before,
+*::after {
+    font-family: "Roboto", sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {}
+
+.title {
+    font-family: "Poppins", sans-serif;
+    font-size: 24px;
+}
+
+.section {
+    display: flex;
+    column-gap: 10px;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+button {
+    display: block;
+    outline: 0;
+    border: 0;
+}
+
+.logo_img {
+    width: 240px;
+    margin-top: 30px;
+}
+
+.field {
+    position: relative;
+    display: grid;
+    align-items: center;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.fieldName {
+    margin-top: 50px;
+}
+
+.name_note {
+    margin-bottom: 25px;
+}
+
+span {
+    color: #646368;
+}
+
+.note {
+    font-size: 12px;
+    margin-top: 5px;
+    margin-left: 5px;
+    user-select: none;
+}
+
+
+.active.note * {
+    color: #d93025;
+}
+
+.active.note>span,
+.active.password_note {
+    margin-left: 5px;
+}
+
+
+.active.note {
+    display: flex;
+    gap: 8px;
+}
+
+.active.note svg {
+    display: block;
+}
+
+.containerNote span {
+    display: block;
+}
+
+.password {
+    margin-top: 30px;
+}
+
+.password_note {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    margin-left: 5px;
+    user-select: none;
+}
+
+.btn {
+    margin-top: 20px;
+}
+
+.symbol {
+    display: block;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    border-radius: 4px;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+        rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    padding: 6px 8px;
+    outline: 0;
+
+    border: 0;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+    outline: 2px solid #1a73e8;
+}
+
+.active.firstName,
+.active.lastName,
+.active.username,
+#password1.active {
+    color: #d93025;
+}
+
+.active+.sub_title {
+    transform: translate(-2px, -17px);
+    transition: 0.25s;
+    font-size: 10px;
+    color: #1a73e8;
+    background-color: #ffff;
+}
+
+.active+.sub_title>span {
+    font-size: 10px;
+}
+
+.sub_title {
+    position: absolute;
+    z-index: 1;
+    left: 6px;
+    pointer-events: none;
+    color: #646368;
+    font-size: 14px;
+    text-align: left;
+    transition: 0.25s;
+    user-select: none;
+}
+
+.sub_title span {
+    font-size: 12px;
+}
+
+
+.gmail {
+    position: absolute;
+    right: 15px;
+    font-size: 14px;
+    color: #202124;
+}
+
+.form {
+    display: flex;
+    position: relative;
+    gap: 50px;
+    padding: 48px 40px 36px 40px;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+        rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    width: fit-content;
+    margin: 40px auto 100px;
+    outline: rgb(32, 33, 36) dashed 0px;
+}
+
+.usercurrent {
+    color: #1a73e8;
+    font-weight: 600;
+    display: block;
+    border: none;
+    outline: 0;
+    background-color: #ffff;
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.btn_Container {
+    padding: 8px;
+    width: fit-content;
+    display: grid;
+    place-content: center;
+    transform: translateX(-8px);
+    transition: backgroud-color 0.5s;
+    cursor: pointer;
+}
+
+.btn_Container:hover {
+    border-radius: 5px;
+    background-color: #f6fafe;
+}
+
+.usercurrent:hover {
+    color: #4688f1;
+
+    border-radius: 5px;
+}
+
+.process {
+    display: flex;
+    align-items: center;
+    margin-top: 80px;
+    justify-content: space-between;
+}
+
+.process * {
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.process .sign_in {
+    color: #1a73e8;
+    transition: 0.5s;
+}
+
+.sign_in:hover {
+    color: #174ea6;
+}
+
+.process .nextBtn {
+    background-color: #1a73e8;
+    padding: 8px 25px;
+    color: #ffff;
+    cursor: pointer;
+    transition: background-color 0.5s;
+    border-radius: 5px;
+}
+
+.nextBtn:hover {
+    background-color: #1b66ca;
+}
+
+.image_google p {
+    text-align: center;
+}
+
+.image_google {
+    margin-top: 50px;
+}
+
+@media (max-width: 768px) {
+    .section {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .image_google {
+        display: none;
+    }
+}
