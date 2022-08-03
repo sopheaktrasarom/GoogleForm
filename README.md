@@ -1,2 +1,2 @@
 # GoogleForm
-CLone Google form
+Clone Google form
